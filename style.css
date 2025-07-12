@@ -11,7 +11,11 @@ body {
   padding-top: 90px;
   /* Adjust this value based on header-main actual height + padding */
 }
-
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
 /* Fixed Header Container */
 .fixed-header-container {
   position: fixed;
@@ -436,15 +440,23 @@ footer {
     max-width: 100%; /* Allow content to use full width */
     margin-bottom: 40px; /* Space between content and potential background image on smaller screens */
   }
-  .content-display img{
+  .content-display img {
     display: none;
   }
   .content-display h1 {
+    position: relative;
+    left: -7%;
     font-size: 2.8em;
   }
 
   .content-display p {
+    position: relative;
+    left: -8%;
     font-size: 1.1em;
+  }
+  .action-btn {
+    position: relative;
+    left: -7%;
   }
 
   .item-showcase {
